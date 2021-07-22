@@ -153,7 +153,7 @@ RUN pecl install -o -f \
   raphf \
   redis \
   ssh2-1.2.0 \
-  xdebug-3.0.0 \
+  xdebug-2.8.1 \
   yaml
 
 # Install Composer.
