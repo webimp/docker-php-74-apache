@@ -85,7 +85,7 @@ RUN buildDeps=" \
 
 # Configure libraries.
 RUN docker-php-ext-configure \
-  gd --with-freetype=/usr/include/ --with-jpeg-dir=/usr/include/
+  gd --with-freetype=/usr/include/ --with-jpeg=/usr/include/
 RUN docker-php-ext-configure \
   imap --with-kerberos --with-imap-ssl
 RUN docker-php-ext-configure \
