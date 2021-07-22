@@ -14,6 +14,7 @@ RUN buildDeps=" \
     runtimeDeps=" \
         curl \
         git \
+        unzip \
         libc-client-dev \
         libfreetype6-dev \
         libgeoip-dev \
@@ -28,6 +29,7 @@ RUN buildDeps=" \
         libmemcachedutil2 \
         libpng-dev \
         libpq-dev \
+        zlib1g-dev \
         libpspell-dev \
         librecode0 \
         librecode-dev \
@@ -150,8 +152,8 @@ RUN pecl install -o -f \
   propro \
   raphf \
   redis \
-  ssh2-1.1.2 \
-  xdebug-2.6.1 \
+  ssh2-1.2.0 \
+  xdebug-3.0.0 \
   yaml
 
 # Install Composer.
