@@ -1,4 +1,4 @@
-FROM php:7.2-apache
+FROM php:7.4-apache
 
 # Use Cloudflare DNS.
 RUN echo "nameserver 1.1.1.1" | tee /etc/resolv.conf > /dev/null
