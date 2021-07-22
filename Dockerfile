@@ -39,7 +39,6 @@ RUN buildDeps=" \
         libxml2-dev \
         libxslt1-dev \
         libyaml-dev \
-        libzip-dev \
         openssh-client \
         rsync \
         sendmail-bin \
@@ -93,8 +92,6 @@ RUN docker-php-ext-configure \
   ldap --with-libdir=lib/x86_64-linux-gnu
 RUN docker-php-ext-configure \
   opcache --enable-opcache
-RUN docker-php-ext-configure \
-  zip --with-libzip
 
 # Enable PHP extensions.
 RUN phpExtensions=" \
