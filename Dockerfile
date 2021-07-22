@@ -5,13 +5,13 @@ RUN echo "nameserver 1.1.1.1" | tee /etc/resolv.conf > /dev/null
 
 # Install dependencies
 RUN buildDeps=" \
-        apt-utils \
         default-libmysqlclient-dev \
         libbz2-dev \
         libmemcached-dev \
         libsasl2-dev \
     " \
     runtimeDeps=" \
+        apt-utils \
         curl \
         git \
         unzip \
